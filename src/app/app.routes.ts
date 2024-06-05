@@ -4,6 +4,7 @@ import { InicioComponent } from './components/inicio/inicio.component';
 import { CadastroComponent } from './components/cadastro/cadastro.component';
 import { OfertaComponent } from './components/oferta/oferta.component';
 import { PerfilComponent } from './components/perfil/perfil.component';
+import { LogoutComponent } from './components/logout/logout.component';
 
 export const routes: Routes = [
     {
@@ -12,6 +13,10 @@ export const routes: Routes = [
     {
         path: 'login', 
         component: LoginComponent
+    },
+    {
+        path: 'logout',
+        component: LogoutComponent
     },
     {
         path: 'inicio',
