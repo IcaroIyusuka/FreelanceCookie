@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="login.component.css">
+  <div class="container">
+    <div class="orange-rectangle"></div>
+    <header>
+      <div class="logo">
+        <h1>FreelaCookies</h1>
+      </div>
+      <div class="login-btn">
+        <button (click)="goToRegistration()" style="color: #FF7F39; background-color: #FFFFFF;">Cadastrar</button>
+      </div>
+    </header>
+    <section class="main-content">
+      <div class="registration-form">
+        <h2>Entrar</h2>
+        <p>Trabalhe/divulgue o freelance perfeito! ;)</p>
+        <form [formGroup]="loginForm" (ngSubmit)="onLogin($event)">
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input id="email" type="email" name="Email" required formControlName="email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Senha</label>
+            <input id="password" type="password" name="Password" required formControlName="senha" required>
+          </div>
+          <button type="submit" style="background-color: #FF7F39; color: #FFFFFF;">Avançar</button>
+          <p style="color: #FF7F39;">Ainda não faz parte do pacote de cookies?</p>
+        </form>
+        <p style="cursor: pointer; font-weight: bold;" (click)="goToRegistration()">Cadastrar</p>
+      </div>
+    </section>
+  </div>
+  <div class="footer-container">
+    <img src="assets/images/logo.png" alt="Logo" style="display: block; margin: auto;">
+    <p style="text-align:center">made with ❤️ by DevCookies</p>
+  </div>

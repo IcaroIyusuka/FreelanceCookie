@@ -1,0 +1,111 @@
+.orange-rectangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa toda a largura do container */
+    height: 90px; /* Altura desejada */
+    background-color: #FF7F39;
+    z-index: -1; /* Para garantir que fique atrás do conteúdo :)*/
+}
+
+body {
+    font-family: 'Saira Stencil One', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo h1 {
+    margin: 0;
+    color: #FFFFFF;
+    font-family: 'Saira Stencil One', sans-serif;
+}
+
+.login-btn {
+    margin-left: auto;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar a {
+    color: #FFFFFF; /* Cor do texto da navbar */
+    text-decoration: none;
+}
+
+.main-content {
+    text-align: center;
+}
+
+.main-content p {
+    color: #FF7F39;
+    margin-bottom: 80px;
+}
+
+.login-btn button {
+    border: 2px solid #FF7F39;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    color: #FF7F39;
+}
+
+.registration-form {
+    margin-top: 150px; /* Espaçamento superior*/
+}
+
+.registration-form form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px solid #ccc;
+    outline: none;
+    background-color: #fff5f0; /* Cor de fundo para os campos de entrada */
+}
+
+.form-group input::placeholder {
+    color: #999999;
+}
+
+/* Botão Avançar */
+.registration-form button {
+    border: 2px solid #FF7F39;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    color: #FF7F39;
+}
+.footer-container {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0; /* Espaçamento interno para o conteúdo */
+}

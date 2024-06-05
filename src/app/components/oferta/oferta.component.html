@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/assets/css/solid.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreelaCookies</title>
+    <link rel="stylesheet" href="oferta.component.css">
+  </head>
+<body ng-app="freelaCookiesApp">
+  <div class="orange-rectangle">
+    <header>
+        <div>
+            <h1 class="saira-stencil-one-regular">FreelaCookies</h1>
+        </div>
+        <div class="login-icon">
+            <a href="/perfil"><i class="fa-regular fa-circle-user fa-2xl"></i></a>
+        </div>
+    </header>
+</div>
+
+<div *ngIf="freelance" class="container" ng-controller="MainController">
+  <a href="/inicio"><i class="fa-solid fa-angle-left"></i></a>
+  <app-freelance-card [freelance]="freelance"></app-freelance-card>
+
+  <div class="freelance-images">
+    <img *ngFor="let img of freelance.images" [src]="img" alt="">
+  </div>
+
+  <p><b>Descrição</b></p> 
+  <p>{{freelance.description}}</p>
+</div>
+  
+<button class="accept-button">
+  Aceitar
+</button>
+
+  
+</body>
+</html>

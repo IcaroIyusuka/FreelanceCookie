@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreelaCookies</title>
+  <link rel="stylesheet" href="cadastro.component.css">
+</head>
+<body ng-app="freelaCookiesApp">
+  <div class="container" ng-controller="MainController">
+    <div class="orange-rectangle"></div>
+    <header>
+      <div class="logo">
+        <h1>FreelaCookies</h1>
+      </div>
+      <div class="login-btn">
+        <button style="color: #FF7F39; background-color: #FFFFFF;">Entrar</button>
+      </div>
+    </header>
+    <section class="main-content">
+      <div class="registration-form">
+        <h2>Cadastrar</h2>
+        <p>Faça parte do nosso pacote de Cookies ;)</p>
+        <form>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input id="email" type="email">
+          </div>
+          <div class="form-group">
+            <label for="password">Senha</label>
+            <input id="password" type="password">
+          </div>
+          <button type="submit" style="background-color: #FF7F39; color: #FFFFFF;">Avançar</button>
+          <p style="color: #FF7F39;">Só está aqui para abrir o pacotinho?</p>
+        </form>
+        <p style="cursor: pointer; font-weight: bold;" onclick="window.location.href = '';">Entrar</p>
+
+      </div>
+    </section>
+  </div>
+
+  <div class="footer-container">
+    <img src="assets/images/logo.png" alt="Logo" style="display: block; margin: auto;">
+    <p style="text-align:center">made with ❤️ by DevCookies</p>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

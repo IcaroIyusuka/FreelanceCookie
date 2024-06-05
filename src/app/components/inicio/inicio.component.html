@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/fontawesome.min.css">
+  <link rel="stylesheet" href="/assets/css/solid.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreelaCookies</title>
+  <link rel="stylesheet" href="inicio.component.css">
+</head>
+
+<body ng-app="freelaCookiesApp">
+  <div class="orange-rectangle">
+    <header>
+      <div>
+        <h1 class="saira-stencil-one-regular">FreelaCookies</h1>
+      </div>
+      <div class="action-buttons">
+        <a href="/cadastro"><button class="register-button">Cadastrar</button></a>
+        <a href="/login"><button class="login-button">Entrar</button></a>
+      </div>
+    </header>
+  </div>
+  <div class="container" ng-controller="MainController">
+    <div class="below-navbar">
+      <p>Contrate o profissional ideal ou trabalhe no freelance perfeito para você.</p>
+      <div  class="action-buttons">
+        <div>
+          <a href="/cadastro"><button class="register-button">Cadastrar</button></a>
+          <a href="/login"><button class="login-button">Entrar</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="services-text">
+      <p>Serviços esperando por freelancers:</p>
+    </div>
+
+
+
+    <div *ngFor="let freelance of freelances" >
+      
+    <a [routerLink]="['/oferta', freelance.id]">
+      <app-freelance-card [freelance]="freelance"></app-freelance-card>
+    </a>
+    </div>
+
+
+
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

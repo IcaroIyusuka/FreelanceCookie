@@ -1,0 +1,13 @@
+<div *ngIf="freelance" class="freelance-card">
+        <img [src]="freelance.principalImgPath" alt="Imagem">
+        <div class="freelance-description">
+          <div class="freelance-data">
+            <p>{{freelance.title}}</p>
+            <div class="freelance-person">
+              <p><i class="fa-solid fa-user"></i>{{freelance.person}}</p>
+              <p><i class="fa-solid fa-location-dot"></i>{{freelance.location}}</p>
+            </div>
+          </div>
+          <p class="freelance-value"><sup>R$</sup>{{freelance.value}}</p>
+        </div>
+</div>

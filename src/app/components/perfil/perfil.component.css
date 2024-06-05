@@ -1,0 +1,66 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    font-size: 20px;
+}
+
+@media (max-width: 800px) {
+    html, body {
+        font-size: 10px;
+    }
+
+    .action-buttons button {
+        font-size: 0.8em;
+    }
+
+    .action-buttons button.register-button {
+        margin-right: 2px;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a, a:hover, a:visited, a:active {
+    text-decoration: none !important;
+    color: #000
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 5% 5% 5% 5%;
+}
+
+.orange-rectangle {
+    background-color: #FF7F39;
+    padding: 0.4% 2.6% 0.4% 2.6%;
+}
+
+.login-icon a {
+    color: #FFF;
+}
+
+.saira-stencil-one-regular {
+    font-family: "Saira Stencil One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+.login-icon a {
+    color: #FFF;
+}
